@@ -1,0 +1,39 @@
+{
+  "name": "cordova-plugin-keychain-password-ios",
+  "version": "1.0.0",
+  "description": "This is a cordova keychain plugin for saving passwords for associated accounts",
+  "cordova": {
+    "id": "cordova-plugin-keychain-password-ios",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michaelklics/cordova-plugin-keychain-ios.git"
+  },
+  "keywords": [
+    "cordova",
+    "plugin",
+    "keychain",
+    "password",
+    "ecosystem:cordova",
+    "cordova-ios"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=6.4.0"
+    },
+    {
+      "name": "cordova-ios",
+      "version": ">=4.3.0"
+    }
+  ],
+  "author": "Michael Klics",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/michaelklics/cordova-plugin-keychain-ios/issues"
+  },
+  "homepage": "https://github.com/michaelklics/cordova-plugin-keychain-ios#readme"
+}
