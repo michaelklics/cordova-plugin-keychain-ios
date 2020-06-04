@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<plugin id="cordova-plugin-keychain-password-ios" version="1.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0">
+<plugin id="cordova-plugin-keychain-password-ios" version="1.0.2" xmlns="http://apache.org/cordova/ns/plugins/1.0">
     <name>Simple Keychain Password Cordova Plugin for iOS</name>
     <description>This is a cordova keychain plugin for saving passwords for associated accounts</description>
     <author>Michael Klics</author>

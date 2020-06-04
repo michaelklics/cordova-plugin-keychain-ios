@@ -8,16 +8,6 @@
 
 import Foundation
 
-private struct KeychainConfiguration {
-    let serviceName: String
-    let accessGroup: String?
-
-    init(_ serviceName: String,_ accessGroup: String? = nil) {
-        self.serviceName = serviceName
-        self.accessGroup = accessGroup
-    }
-}
-
 @objc(KeychainPassword)
 public class CordovaPluginTemplate: CDVPlugin {
 
@@ -35,6 +25,16 @@ public class CordovaPluginTemplate: CDVPlugin {
         // TODO: Capitalize and split
         var message: String {
             return String(describing: KeychainInterfaceError.self) + ": " + String(describing: self)
+        }
+    }
+
+    private struct KeychainConfiguration {
+        let serviceName: String
+        let accessGroup: String?
+
+        init(_ serviceName: String,_ accessGroup: String? = nil) {
+            self.serviceName = serviceName
+            self.accessGroup = accessGroup
         }
     }
 

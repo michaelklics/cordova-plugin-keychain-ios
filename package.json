@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-keychain-password-ios",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "This is a cordova keychain plugin for saving passwords for associated accounts",
   "cordova": {
     "id": "cordova-plugin-keychain-password-ios",
