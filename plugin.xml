@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<plugin id="cordova-plugin-keychain-password-ios" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0">
+    <name>Simple Keychain Password Cordova Plugin for iOS</name>
+    <description>This is a cordova keychain plugin for saving passwords for associated accounts</description>
+    <author>Michael Klics</author>
+    <keywords>cordova,plugin,keychain,password</keywords>
+    <engines>
+        <engine name="cordova" version=">=6.4.0"/>
+        <engine name="cordova-ios" version=">=4.3.0"/>
+    </engines>
+    <js-module src="www/keychain-password.js" name="KeychainPassword">
+        <clobbers target="KeychainPassword"/>
+    </js-module>
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="KeychainPassword">
+                <param name="ios-package" value="KeychainPassword"/>
+            </feature>
+        </config-file>
+        <source-file src="src/ios/KeychainPassword.swift"/>
+        <source-file src="src/ios/KeychainPasswordItem.swift"/>
+        <dependency id="cordova-plugin-add-swift-support" version="2.0.2"/>
+    </platform>
+</plugin>
