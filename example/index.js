@@ -25,10 +25,10 @@ var app = {
         var keychain = window.plugins.KeychainPassword
 
         keychain.updateKeychainConfiguration("Coardova App Keychain", null, function(json) {
-            console.log("Update Keychain Configureation: Success");
+            console.log("Update Keychain Configuration: Success");
             console.log(json);
         }, function(json){
-            console.log("Update Keychain Configureation: Failure");
+            console.log("Update Keychain Configuration: Failure");
             console.log(json);
         });
 
